@@ -78,18 +78,21 @@ hr {
     margin-top: 5rem;
     background-color: var(--white);
     border-radius: 35px;
+    transition: all 0.5s ease;
 }
 
 /* #region image */
 .hero-image {
     padding-left: var(--padding);
     padding-right: var(--padding);
+    transition: all 0.5s ease;
 }
 
 .hero-image img {
     width: 100%;
     height: auto;
     border-radius: 25px;
+    transition: all 0.5s ease;
 }
 
 /* #endregion */
@@ -196,6 +199,7 @@ td {
 
     body{
         background-color: var(--white);
+        transition: all 0.5s ease;
     }
 
     .content {
@@ -203,6 +207,7 @@ td {
         margin-top: 0;
         max-width: 100%;
         border-radius: 0px;
+        transition: all 0.5s ease;
     }
 
     .hero-image {
