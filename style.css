@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Colores */
+:root {
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+    --font-size: 16px;
+    --padding: 3rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: var(--font-size);
+    color: var(--stone-600);
+    margin: 0;
+    padding: 0;
+    background-color: var(--stone-100);
+}
+
+h1,
+h2 {
+    margin: 0;
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 40px;
+    color: var(--stone-900);
+}
+
+h2 {
+    font-size: 32px;
+    color: var(--brown-800);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ol {
+    padding-left: 1rem;
+}
+
+li {
+    position: relative;
+    padding-left: 1.5rem;
+    line-height: 1.5rem;
+}
+
+li::before {
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+hr {
+    margin: 0 var(--padding);
+    border: 0;
+    border-top: 1px solid var(--stone-100);
+}
+
+.content {
+    padding-top: var(--padding);
+    max-width: 750px;
+    margin-top: 5rem;
+    background-color: var(--white);
+    border-radius: 35px;
+}
+
+/* #region image */
+.hero-image {
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+/* #endregion */
+
+
+/* #region hero-section */
+.hero-section {
+    margin: 2rem var(--padding);
+}
+
+/* #endregion */
+
+
+/* #region preparation-time */
+.preparation-time {
+    margin: var(--padding);
+    background-color: var(--rose-50);
+    padding: .5rem 1.75rem;
+    border-radius: 15px;
+}
+
+.preparation-time h3 {
+    font-size: 24px;
+    color: var(--rose-800);
+    margin: 1rem 0 0 0;
+}
+
+.preparation-time ul li::before {
+    content: "•";
+    color: var(--rose-800);
+}
+/* #endregion */
+
+
+/* #region ingredients */
+.ingredients {
+    margin: 2rem var(--padding);
+}
+
+.ingredients ul li::before {
+    content: "▪";
+    color: var(--brown-800);
+}
+/* #endregion */
+
+
+/* #region instructions */
+.instructions {
+    margin: 2rem var(--padding);
+}
+
+.instructions ol li::marker {
+    color: var(--brown-800);
+    font-weight: bold;
+    line-height: 3rem;
+}
+/* #endregion */
+
+
+/* #region nutrition */
+.nutrition {
+    margin: 2rem var(--padding);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    
+  }
+
+th, td {
+    border-bottom: 1px solid var(--stone-100);
+    text-align: left;
+    padding: 8px 0;
+    width: 50%;
+}
+
+th {
+    color: var(--brown-800);
+}
+
+td {
+    padding-left: var(--padding);
+}
+/* #endregion */
+
+/* #region attribution */
+.attribution {
+    margin: 2rem var(--padding);
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* #endregion */
+
+@media (max-width: 799px) {
+:root {
+    --padding: 1.5rem;
+}
+
+    body{
+        background-color: var(--white);
+    }
+
+    .content {
+        padding: 0;
+        margin-top: 0;
+        max-width: 100%;
+        border-radius: 0px;
+    }
+
+    .hero-image {
+        padding: 0;
+    }
+
+    .hero-image img {
+        border-radius: 0px;
+    }
+}
